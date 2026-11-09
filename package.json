@@ -1,0 +1,14 @@
+{
+  "name": "dvbuf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/history.test.js tests/paste.test.js"
+  },
+  "license": "MIT",
+  "description": "Local clipboard history for GNOME Shell 46",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adelith74/dvbuf.git"
+  }
+}

@@ -1,0 +1,16 @@
+# Build output and development dependencies
+schemas/gschemas.compiled
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+
+# Local diagnostics and clipboard data
+work/
+outputs/
+screenshots/
+*.log
+history.json
+*.image
+.env
+.env.*

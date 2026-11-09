@@ -1,0 +1,5 @@
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clipdock" path="/org/gnome/shell/extensions/clipdock/">
+    <key name="toggle-history" type="as"><default>['&lt;Super&gt;v']</default></key>
+  </schema>
+</schemalist>

@@ -1,0 +1,11 @@
+{
+  "uuid": "clipdock@local",
+  "name": "dvbuf",
+  "description": "Local clipboard history for text and images. Open with Super+V.",
+  "shell-version": [
+    "46"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.clipdock",
+  "version": 2,
+  "url": "https://github.com/Adelith74/dvbuf"
+}

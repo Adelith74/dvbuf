@@ -1,0 +1,26 @@
+.modal-dialog.clip-dialog {
+    width: 360px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background-color: #202127;
+    color: #f3f3f7;
+    padding: 10px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 14px 46px rgba(0,0,0,0.45);
+}
+.clip-dialog .modal-dialog-content-box { spacing: 12px; }
+.clip-scroll { max-height: 368px; }
+.clip-list { spacing: 7px; padding-right: 8px; }
+.clip-scroll StScrollBar { min-width: 10px; }
+.clip-card { background-color: #2b2d35; border-radius: 11px; border: 1px solid #3c3e49; }
+.clip-card:hover { background-color: #333641; }
+.clip-selected { border-color: #a7b2ff; background-color: #343744; }
+.clip-card-content { padding: 9px; text-align: left; border-radius: 10px; }
+.clip-card-content:focus { background-color: rgba(167,178,255,0.08); }
+.clip-text { font-size: 13px; max-height: 82px; color: #f0f0f4; }
+.clip-image { padding: 3px; }
+.clip-more { font-size: 23px; padding: 0 9px 5px 9px; margin: 5px; border-radius: 7px; color: #d5d7e0; }
+.clip-more:hover, .clip-more:focus { background-color: #505361; }
+.clip-clear { padding: 7px 10px; border-radius: 8px; color: #d5d7e0; font-size: 12px; }
+.clip-clear:hover, .clip-clear:focus { background-color: #3b3d47; }
