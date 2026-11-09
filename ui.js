@@ -111,6 +111,18 @@ export class HistoryPanel {
         const texture = St.TextureCache.get_default().load_file_async(
             this.controller.storage.imageFile(entry.id), size === 132 ? 236 : 520, size,
             St.ThemeContext.get_for_stage(global.stage).scale_factor, 1);
+        texture.request_mode = Clutter.RequestMode.HEIGHT_FOR_WIDTH;
+        // StTextureCache uses the requested bounds as the preferred size, even
+        // when the decoded image is narrower or shorter. Use its actual pixels
+        // for the actor size so the default fill gravity cannot distort it.
+        const resize = () => {
+            const pixels = texture.get_content()?.get_texture();
+            if (pixels)
+                texture.set_size(pixels.get_width(), pixels.get_height());
+        };
+        const contentSignal = texture.connect('notify::content', resize);
+        texture.connect('destroy', () => texture.disconnect(contentSignal));
+        resize();
         texture.x_align = Clutter.ActorAlign.CENTER;
         texture.y_align = Clutter.ActorAlign.CENTER;
         return new St.Bin({
